@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: #000000;
+  --color-foreground: #ffffff;
+  --color-primary: #0a0a0a;
+  --color-primary-foreground: #ffffff;
+  --color-secondary: #1a1a1a;
+  --color-secondary-foreground: #ffffff;
+  --color-muted: #2a2a2a;
+  --color-muted-foreground: #a0a0a0;
+  --color-accent: #2563eb; /* Biru sebagai aksen */
+  --color-accent-foreground: #ffffff;
+  --color-destructive: #ef4444;
+  --color-destructive-foreground: #ffffff;
+  --color-border: #333333;
+  --color-input: #333333;
+  --color-ring: #2563eb;
+  --radius: 0.5rem;
+}
+
+/* Dark mode default (karena tema dominan hitam) */
+:root {
+  /* Dominan Hitam-Putih */
+  --background: 0 0% 0%;
+  --foreground: 0 0% 100%;
+  --card: 0 0% 4%;
+  --card-foreground: 0 0% 100%;
+  --popover: 0 0% 4%;
+  --popover-foreground: 0 0% 100%;
+  
+  /* Primary - Hitam Pekat */
+  --primary: 0 0% 0%;
+  --primary-foreground: 0 0% 100%;
+  
+  /* Secondary - Abu-abu Gelap */
+  --secondary: 0 0% 12%;
+  --secondary-foreground: 0 0% 100%;
+  
+  /* Muted */
+  --muted: 0 0% 15%;
+  --muted-foreground: 0 0% 65%;
+  
+  /* Aksen - Biru (Apple Wallet style) */
+  --accent: 217 91% 60%;
+  --accent-foreground: 0 0% 100%;
+  
+  /* Destructive (opsional) */
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 0 0% 100%;
+  
+  --border: 0 0% 20%;
+  --input: 0 0% 20%;
+  --ring: 217 91% 60%;
+  --radius: 0.75rem;
+}
+
+/* Dark mode - tetap hitam */
+.dark {
+  --background: 0 0% 0%;
+  --foreground: 0 0% 100%;
+  /* ...sama seperti di atas */
+}
